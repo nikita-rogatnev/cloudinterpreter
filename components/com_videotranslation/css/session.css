@@ -1,0 +1,107 @@
+#rt-mainbody-surround {
+    background: #252D35;
+}
+
+section {
+    margin: 0px;
+}
+
+span.volume {
+    display: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+
+    margin-left: 0px !important;
+}
+
+.ui-slider .ui-slider-handle {
+
+    width: 2px !important;
+    height: 10px !important;
+}
+
+.ui-state-default {
+    border: 0px !important;
+    background: #ed706c;
+}
+
+.ui-slider-horizontal {
+    height: 2px !important;
+}
+
+.slider {
+    border-width: 0px !important;
+    /*width: 103px !important;*/
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+.volume-control section {
+    display: block !important;
+
+    height: 15px !important;
+    width: 137px !important;
+    background: #000000;
+    border-radius: 5px;
+    padding-top: 13px;
+    top: -9px;
+    right: -93px;
+
+}
+
+.menu-block {
+    display: none !important;
+}
+
+.rt-container .rt-block .module-surround .module-content {
+
+    position: relative !important;
+    right: 2px !important;
+}
+
+.login-link {
+    position: relative;
+    left: 570px;
+    width: 345px;
+}
+.hasCountdown {
+    border: 0 !important;
+    background-color: none;
+    height: 100%;
+}
+
+#defaultCountdown {
+    height: 44px;
+    width: 55px;
+}
+
+#defaultCountdown .countdown_row {
+
+    display: block;
+    background-color: none;
+    background: none;
+}
+.timer-container {
+    display: block !important;
+}
+
+
+#rt-drawer {
+    background-color: #252e35 !important;
+}
+
+#rt-main .rt-container .rt-block {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+
+    padding-left: 0px !important;
+}
+
+
+
+.hasCountdownLight {
+    color: red;
+
+}
+

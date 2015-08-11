@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+
+        <field name="note1" type="note" label="COM_VIDEOTRANSLATION_ENTER_PARTNERS_DETAILS" class="partners-note"/>
+
+        <field type="spacer" name="" hr="true" class="title-separator"/>
+
+        <field
+                name="partner_name"
+                type="text"
+				default="" 
+				label="COM_VIDEOTRANSLATION_PARTNERS_NAME"
+				description=""
+                class="userform"
+                labelclass="label-userform"
+                required="true"
+                />
+
+        <field name="partner_dont_know_name" type="checkbox" label="COM_VIDEOTRANSLATION_I_DONT_KNOW_THE_NAME" description="" value="1" default="0" labelclass="label-dont_know_name" class="dont_know_name"/>
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="partner_email"
+                type="email"
+                default=""
+                label="COM_VIDEOTRANSLATION_EMAIL"
+                description=""
+                class="userform"
+                labelclass="label-userform"
+                required="true"
+                />
+
+        <field name="note23" type="note" class="your_partner_should_approve" label="" description="COM_VIDEOTRANSLATION_YOUR_PARTNER_SHOULD_APPROVE" />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="partner_phone"
+                type="tel"
+                default=""
+                label="COM_VIDEOTRANSLATION_PHONE"
+                description=""
+                class="userform"
+                labelclass="label-userform"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="partner_invitation1"
+                type="textarea"
+                translate_default="false"
+                default="COM_VIDEOTRANSLATION_BODY_PARTNER1"
+                label="COM_VIDEOTRANSLATION_AUTO_GENERATED_INVITATION"
+                description=""
+                rows="15"
+                cols="5"
+                class="partner_invitation_textarea"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field name="note22" type="note" class="alert" label="" description="COM_VIDEOTRANSLATION_SYSTEM_WORKS_ONLY_IN_GOOGLE_CHROME" />
+
+        <field name="note23" type="note" class="your_partner_should_approve" label="" description="COM_VIDEOTRANSLATION_YOUR_PARTNER_SHOULD_APPROVE" />
+
+        </fieldset>
+</form>

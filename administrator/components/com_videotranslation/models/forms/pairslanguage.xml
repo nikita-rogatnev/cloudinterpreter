@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+        <field
+                name="langId1"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Language 1"
+                description=""
+                required="true"
+                query="select id as value, name as langId1 from #__vt_languages ORDER BY name"
+                />
+        <field
+                name="langId2"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Language 2"
+                description=""
+                required="true"
+                query="select id as value, name as langId2 from #__vt_languages ORDER BY name"
+                />
+
+        <field name="pairFLAGImage1" type="imagelist" default="" label="Select an image (not retina)" description="" directory="/images/flags/" exclude="" stripext="" />
+
+        <field name="pairFLAGImage2" type="imagelist" default="" label="Select an image (retina)" description="" directory="/images/flags/" exclude="" stripext="" />
+
+        <field name="usesInApp" type="radio" class="btn-group"
+               label="Use for mobile application?"
+               description=""
+               default="0"
+                >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field
+                name="tag"
+                type="text"
+                label="Tag for application"
+                description=""
+                size="80"
+                class="inputbox"
+                default=""
+                required="false"
+                />
+
+    </fieldset>
+</form>

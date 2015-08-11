@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+        <field
+                name="pair_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Language Pair"
+                description=""
+                required="true"
+                query="SELECT a.id as value, concat(b.name,'-', c.name) as pair_id
+                        from jos_vt_pairslanguages as a
+                        left join jos_vt_languages as b on a.langId1 = b.id
+                        left join jos_vt_languages as c on a.langId2 = c.id"
+                />
+        <field
+                name="subj_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Subject"
+                description=""
+                required="true"
+                query="select id as value, name as subj_id from #__vt_subjects ORDER BY name"
+                />
+        <field
+                name="rate"
+                type="text"
+                label="Subject's rate"
+                description=""
+                size="80"
+                class="inputbox"
+                default=""
+                required="true"
+                />
+
+	</fieldset>
+</form>

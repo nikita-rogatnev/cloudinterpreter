@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+
+
+        <field name="approve" type="radio" default="1" label="COM_VIDEOTRANSLATION_SELECT_AN_OPTION" description="" class="userform" >
+            <option value="1" class="label-radio">COM_VIDEOTRANSLATION_APROVE</option>
+            <option value="0" class="label-radio">COM_VIDEOTRANSLATION_DONT_APROVE</option>
+        </field>
+
+        <field type="spacer" name="" hr="false"/>
+
+
+        </fieldset>
+</form>

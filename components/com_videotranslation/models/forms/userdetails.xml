@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+        <field
+                name="pair_id"
+                type="hidden"
+                />
+
+        <field name="note2" type="note" label="COM_VIDEOTRANSLATION_ENTER_YOUR_DETAILS" class="partners-note"/>
+
+        <field type="spacer" name="" hr="true" class="title-separator"/>
+
+        <field
+                name="subj_id"
+                type="sql"
+                default=""
+                label="COM_VIDEOTRANSLATION_SUBJECT"
+                description=""
+                required="true"
+                query="select id as value, name as subj_id from #__vt_subjects ORDER BY `default` DESC"
+                class="userform styled-select"
+                labelclass="label-userform"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="total_time"
+                type="text"
+                default=""
+                label="COM_VIDEOTRANSLATION_TIME"
+                description=""
+                class="readonly userform"
+                labelclass="label-userform"
+                readonly="true"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="amount"
+                type="text"
+                default=""
+                label="COM_VIDEOTRANSLATION_AMOUNT"
+                description=""
+                class="readonly userform"
+                labelclass="label-userform"
+                readonly="true"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="first_name"
+                type="text"
+				default="" 
+				label="COM_VIDEOTRANSLATION_NAME"
+				description=""
+                class="userform"
+                labelclass="label-userform"
+                required="true"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="email"
+                type="email"
+                default=""
+                label="COM_VIDEOTRANSLATION_EMAIL"
+                description=""
+                class="userform"
+                labelclass="label-userform"
+                required="true"
+                />
+
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field
+                name="phone"
+                type="tel"
+                default=""
+                label="COM_VIDEOTRANSLATION_PHONE"
+                description=""
+                class="userform"
+                labelclass="label-userform"
+                />
+
+        <field type="spacer" name="" hr="false"/>
+
+
+
+        <field type="spacer" name="" hr="false"/>
+
+
+        <field name="note1" type="note" class="partenter-will-see-it" label="" description="" />
+
+        <field type="spacer" name="" hr="false"/>
+
+        </fieldset>
+</form>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>Videotranslation</name>
+	<creationDate>May 2013</creationDate>
+	<author>Lapytko Yura</author>
+	<authorEmail>kosmos.by@gmail.com</authorEmail>
+	<authorUrl>http://lapytko-yura.narod.ru</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>1.0</version>
+	<description>Description of the videotranslation component ...</description>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>videotranslation.php</filename>
+        <filename>controller.php</filename>
+
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>lib</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+    </files>
+
+    <media destination="com_videotranslation" folder="media">
+        <folder>images</folder>
+    </media>
+
+	<administration>
+		<menu img="class:videotranslation">Videotranslation</menu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>videotranslation.php</filename>
+			<folder>controllers</folder>
+			<folder>css</folder>
+			<folder>helpers</folder>
+			<folder>js</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+</extension>
+

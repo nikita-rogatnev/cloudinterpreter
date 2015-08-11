@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>yoonique[.]net Zopim</name>
+	<author>yoonique[.]net</author>
+	<creationDate>April 2011</creationDate>
+	<copyright>Copyright (C) 2011 yoonique[.]net</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>zopim@yoonique.net</authorEmail>
+	<authorUrl>www.yoonique.net</authorUrl>
+	<version>4.1.1</version>
+	<description>PLG_YOONIQUE_ZOPIM_DESCRIPTION</description>
+	<files>
+		<folder>language</folder>
+		<filename plugin="yoonique_zopim">yoonique_zopim.php</filename>
+		<folder plugin="yoonique_zopim">yoonique_zopim</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_yoonique_zopim.ini</language>
+	</languages>
+	<config addfieldpath="/plugins/system/yoonique_zopim/yoonique_zopim">
+	<fields name="params">
+		<fieldset name="main" label="Zopim settings">
+			<field name="zopimlink" type="zopimaccount" label=" " description="password" default="" />
+			<field name="zopim_id" type="text" default="" label="Zopim id" size="32" description="This is the Zopim id provided by Zopim in the widget code (located directly after the question mark)."  />
+			<field name="language_id" type="text" default="" size="5" label="Language code" description="This is typically a two charactor ISO code."  />
+			<field name="zopim_show" type="text" default="" size="20" label="Zopim Show Position" description="You can enter a module position here. The Zopim live chat will be shown on pages where a module is assigned to this position." />
+			<field name="zopim_hide" type="text" default="" size="20" label="Zopim Hide Position" description="You can enter a module position here. The Zopim chat bubble will be hidden on pages where a module is assigned to this position." />
+			<field name="zopim_version" type="radio" default="1" label="Widget version" description="Zopim released an exciting new Chat Widget v2. You just need to select v2 to activate the new widget.">
+				<option value="v1">v1</option>
+				<option value="v2">v2</option>
+			</field>
+			<field name="zopim_tablet" type="radio" default="0" label="Hide for Tablet" description="If set to Yes, the chat bubble will be hidden on Tablets.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="zopim_mobile" type="radio" default="0" label="Hide for Mobile" description="If set to Yes, the chat bubble will be hidden on Mobiles.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+		</fieldset>
+	</fields>
+	</config>
+</extension>

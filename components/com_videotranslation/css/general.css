@@ -1,0 +1,123 @@
+
+#videoLine {
+    /*padding-left: 60px;*/
+/*    margin: 0 auto;
+*/    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+#localVideo {
+    width: 275px;
+    height: 213px;
+    display: block;
+   float: left;
+}
+
+#videoUserName {
+    width: 176px;
+    display: none;
+}
+
+#remotes {
+    /*width: 362px;*/
+    /*padding-left: 105px;*/
+    padding-top: 37px;
+    float: left;
+}
+
+#videoLine video {
+    display: block;
+}
+
+.volume-control {
+    display: none;
+    margin-top: -30px;
+  /*  padding-left: 290px; */
+}
+
+.some-info-about-user {
+
+    line-height: 20px;
+    position: relative;
+
+
+    background: #000000;
+    height: 26px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 10px;
+    top: -37px;
+    padding-left: 19px;
+    padding-top: 4px;
+    color: #ffffff;
+}
+
+#defaultCountdown {
+    width: 56px;
+    height: 25px;
+    font-size: 7px;
+}
+
+#session-time-out {
+    position: absolute;
+
+    z-index: 10;
+    left:1126px;
+    display: none;
+}
+
+#session-time-out-main {
+    background-image: url("../img/session-time-out.jpg");
+    width: 175px;
+    height:93px;
+}
+
+#no {
+     background-image: url("../img/no.jpg");
+     width: 83px;
+     height:50px;
+     float:left;
+     cursor: pointer;
+}
+
+#yes {
+    background-image: url("../img/yes.jpg");
+    width: 92px;
+    height:50px;
+    float:left;
+    cursor: pointer;
+}
+
+#control-block {
+
+    float: right;
+    margin-top: 60px;
+}
+
+#add-more-participants {
+    background-image: url("../img/add-more-participants.jpg");
+    width: 220px;
+    height: 28px;
+    cursor: pointer;
+}
+
+#leave-session {
+    background-image: url("../img/leave-session.jpg");
+    width: 150px;
+    height: 27px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.localVideo-container {
+    margin-top: 100px;
+    width: 275px;
+    height: 213px;
+    margin-bottom: 84px;
+}
+
+.remote-video-container {
+    width: 446px;
+    height: 412px;
+}

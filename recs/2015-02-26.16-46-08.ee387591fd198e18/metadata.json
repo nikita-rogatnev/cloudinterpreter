@@ -1,0 +1,19 @@
+{
+  "audio" : [
+    {"ssrc":4127222612,"rtpTimestamp":3259167863,"filename":"4127222612.mp3","endpointId":"62999b10","type":"RECORDING_STARTED","instant":1424958368502,"mediaType":"audio"},
+    {"ssrc":346537494,"rtpTimestamp":3239731656,"filename":"346537494.mp3","endpointId":"6e27991f","type":"RECORDING_STARTED","instant":1424958368956,"mediaType":"audio"},
+    {"ssrc":3566407502,"rtpTimestamp":3254006520,"filename":"3566407502.mp3","endpointId":"a698fa6e","type":"RECORDING_STARTED","instant":1424958369848,"mediaType":"audio"}
+  ],
+
+  "video" : [
+    {"ssrc":1343453654,"rtpTimestamp":2838719850,"filename":"1343453654.webm","aspectRatio":"16_9","endpointId":"6e27991f","type":"RECORDING_STARTED","instant":1424958368627,"mediaType":"video"},
+    {"ssrc":2870976500,"rtpTimestamp":2255293151,"filename":"2870976500.webm","aspectRatio":"16_9","endpointId":"62999b10","type":"RECORDING_STARTED","instant":1424958368648,"mediaType":"video"},
+    {"ssrc":2254721532,"rtpTimestamp":563681792,"filename":"2254721532.webm","aspectRatio":"16_9","endpointId":"a698fa6e","type":"RECORDING_STARTED","instant":1424958368667,"mediaType":"video"},
+    {"ssrc":1343453654,"endpointId":"6e27991f","type":"SPEAKER_CHANGED","instant":1424958386215,"mediaType":"video"},
+    {"ssrc":2254721532,"endpointId":"a698fa6e","type":"SPEAKER_CHANGED","instant":1424958387715,"mediaType":"video"},
+    {"ssrc":1343453654,"endpointId":"6e27991f","type":"SPEAKER_CHANGED","instant":1424958391917,"mediaType":"video"},
+    {"ssrc":2254721532,"endpointId":"a698fa6e","type":"SPEAKER_CHANGED","instant":1424958400021,"mediaType":"video"},
+    {"ssrc":1343453654,"endpointId":"6e27991f","type":"SPEAKER_CHANGED","instant":1424958406921,"mediaType":"video"},
+    {"ssrc":2870976500,"endpointId":"62999b10","type":"SPEAKER_CHANGED","instant":1424958413523,"mediaType":"video"}
+  ]
+}

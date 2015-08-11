@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script src="http://78.140.138.8:1999/socket.io/socket.io.js"></script>
+    <script src="call-center.js"></script>
+</head>
+<body>
+
+<div id="dialog" title="">
+    Incoming call
+</div>
+
+
+<table>
+     <tr>
+        <td>server status:</td>
+        <td>
+            <div id="ifOnline"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>socket id:</td>
+        <td>
+            <div id="socketId" style="font-size: 12px;"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>interpreter status:</td>
+        <td>
+            <select id="ifUserOnline" name="ifUserOnline">
+                <option value="1">online</option>
+                <option value="2">busy</option>
+                <option value="3">away</option>
+				<option value="4">answering</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>interpreter language:</td>
+        <td>
+            <select id="interpreterLanguage" name="interpreterLanguage">
+                <option value="0">--select language--</option>
+                <option value="online english">english</option>
+                <option value="online german">german</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+		<td>calling users:</td>
+		<td>
+			<div id="waitingUsers" style="font-size: 12px;"></div>
+		</td>
+    </tr>
+    <tr>
+        <td>visitors:</td>
+        <td>
+            <div id="visitors" style="font-size: 12px;"></div>
+        </td>
+    </tr>
+
+
+</table>
+
+
+
+
+</body>
+</html>

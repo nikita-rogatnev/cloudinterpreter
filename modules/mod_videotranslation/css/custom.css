@@ -1,0 +1,319 @@
+.module-videotranslation {
+    /*width: 944px;*/
+    height: 212px;
+    /*border: 1px solid #e7e7e7;*/
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+#module-videotranslation-header {
+    width: 944px;
+    height: 81px;
+    /*background-image: url("../images/personal/module-videotranslation.jpg");*/
+}
+
+#select-language {
+    width: 380px;
+    height: 210px;
+    /*border-right: 1px solid #e7e7e7;*/
+
+    float: left;
+    border: 1px solid red;
+}
+
+
+
+#select-when {
+    float: left;
+    width: 380px;
+    height: 210px;
+
+    /*border-right: 1px solid #e7e7e7;*/
+    border: 1px solid red;
+}
+
+
+.ui-datepicker-calendar {
+    border: 0px;
+}
+
+.ui-datepicker-title {
+    font-weight: bold;
+}
+
+#payment {
+    font-size: 15px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid red;
+    width: 380px;
+    height: 210px;
+}
+
+#order {
+    width: 182px;
+    height: 57px;
+    /*background-image: url("../images/personal/order.jpg");*/
+
+}
+
+
+
+.custom-banner1,.custom-banner2 {
+    padding-top: 34px;
+}
+
+/* videotranslation forms */
+
+.label-require-specialist {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+.require-specialist {
+    position: absolute;
+    top:53px;
+}
+
+.label-first-name {
+    margin-top: 75px;
+}
+
+.readonly {
+
+    border: 0px;
+    box-shadow: 0px 0px;
+    border-radius: 0px;
+
+
+}
+
+.spacer {
+    clear: both;
+    display: block;
+    height: 15px;
+}
+
+
+.userform {
+    float: left;
+    width: 300px;
+}
+
+.label-userform {
+    width: 100px;
+    float: left;
+}
+
+.offer-note {
+    position: absolute;
+    top: 126px;
+    left: 563px;
+}
+
+.credits {
+    position: absolute;
+    top: 231px;
+    left: 563px;
+    width: 75px;
+}
+
+.label-credits {
+    position: absolute;
+    top: 194px;
+    left: 563px;
+}
+
+.userform-next {
+    float: right;
+}
+
+.userform-back {
+    float: left;
+}
+
+.partners-note {
+
+}
+
+
+.label-dont_know_name {
+    position: absolute;
+    left: 475px;
+    top: 69px;
+}
+
+.dont_know_name {
+    position: absolute;
+    top:72px;
+    left: 450px;
+}
+
+.label-partner_personal_notes {
+
+    cursor: pointer;
+    text-decoration: underline;
+    color: #3c6bb6;
+}
+
+.partner_personal_notes {
+    display: none;
+}
+
+.partners-note {
+    font-size: 18px;
+}
+
+.div-balance {
+    /*position: absolute;*/
+    /*right: 222px;*/
+    /*top: 30px;*/
+}
+
+.userform label.label-radio {
+
+    width: 150px;
+    display: block;
+    position: relative;
+    top:-26px;
+    left: 30px;
+
+}
+
+#mod_login_logoutform-greetings {
+    position: absolute;
+    top: 30px;
+    right: 287px;
+    display: block;
+}
+
+
+#mod_login_logoutform-greetings .cbLogoutButtonSpan {
+    display: none;
+}
+
+.login-link {
+    /*position: absolute;*/
+    /*right: 100px;*/
+    /*top: 30px;*/
+}
+
+.login-link-header {
+    cursor: pointer;
+}
+
+.login-link-header:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.userdata span,.userdata input {
+    /*text-align: left;*/
+}
+
+.your_partner_should_approve {
+    margin-left: 440px;
+    display: block;
+    line-height: 17px;
+    font-size: 12px;
+}
+
+.partner_invitation_textarea {
+    resize: none;
+}
+
+.timeline-window-container {
+
+    width: 100%;
+    background-color: #495565;
+
+    position: relative;
+}
+
+#rt-header {
+    position: relative;
+}
+
+.videotranslation-block {
+    height: 300px;
+}
+
+.styled-select select {
+    background: transparent;
+    width: 183px;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 1.2;
+    border: 0;
+    border-radius: 0;
+    height: 28px;
+    -webkit-appearance: none;
+}
+
+.styled-select {
+    width: 163px;
+    height: 28px;
+    overflow: hidden;
+    background: url(../../../components/com_videotranslation/img/arrow.png) no-repeat right #ffffff;
+    /*border: 1px solid #ccc;*/
+   border-radius: 2px;
+}
+
+.newButton {
+        height: 30px;
+        font-size: 13px !important;
+        color: gray !important;
+}
+
+.callTranslatorNow {
+        background: #ED6F6D;
+        color: white !important;
+}
+
+
+.styled-select24 select {
+    background: transparent;
+    width: 183px;
+    padding: 5px 5px 5px 5px;
+    font-size: 13px;
+    line-height: 1.2;
+    border: 0;
+    border-radius: 0;
+    height: 30px;
+    -webkit-appearance: none;
+}
+
+.styled-select24 {
+    width: 163px;
+    height: 30px;
+    overflow: hidden;
+    background: url("../../../components/com_videotranslation/img/arrow.png") no-repeat right #ffffff;
+    /*border: 1px solid #ccc;*/
+    background-size: 28px Auto;
+   border-radius: 2px;
+}
+
+.callTranslatorNow {
+    text-shadow: none !important;
+}
+
+#divbuttonOrder {
+    bottom: 20px !important;
+}
+.cancel-call-btn {
+    background:#5cb85c !important;
+}
+.clipboardimg {
+    cursor: pointer;
+}
+/* Убираем рамку вокруг ползунка громкости*/
+.ui-slider-handle {
+    border: none !important;
+}
+
+#defaultCountdown1 {
+    background: rgb(255, 255, 126);
+ 	display:none;   
+}

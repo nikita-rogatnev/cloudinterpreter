@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+
+        <field name="reason_refuse" default="1" type="radio" label="COM_VIDEOTRANSLATION_SELECT_REASON" description="" class="userform" >
+
+            <option value="1" class="label-radio">COM_VIDEOTRANSLATION_REASON_REFUSE1</option>
+
+            <option value="3" class="label-radio">COM_VIDEOTRANSLATION_REASON_REFUSE3</option>
+
+
+        </field>
+
+        <field type="spacer" name="" hr="false"/>
+
+        <field name="the_other_reason_text" type="textarea" default="" label="" description="" rows="4" cols="1" labelclass="" class="partner_personal_notes"/>
+
+    </fieldset>
+</form>

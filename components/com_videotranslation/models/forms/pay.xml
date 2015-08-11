@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+        <field
+                name="order_id"
+                type="hidden"
+                />
+
+        <field name="order_sum" type="text" default="" label="COM_VIDEOTRANSLATION_FILL_SUM" description="" size="10" required="true"/>
+
+</form>

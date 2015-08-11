@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+        <field
+                name="user_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Username"
+                description=""
+                required="true"
+                query="select id as value, concat(name, ' (',username,')') as user_id from jos_users ORDER BY id"
+                />
+        <field
+                name="amount"
+                type="text"
+                label="Credit's amount"
+                description=""
+                size="80"
+                class="inputbox"
+                default=""
+                required="true"
+                />
+
+	</fieldset>
+</form>

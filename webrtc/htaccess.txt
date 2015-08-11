@@ -1,0 +1,4 @@
+AuthUserFile /var/demo/.htpasswd
+AuthType Basic
+AuthName "My Files"
+Require valid-user

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+        <field
+                name="user_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Interpreter"
+                description=""
+                required="true"
+                query="select a.id as value, a.name as user_id from #__users as a, #__user_usergroup_map as b where a.id = b.user_id and b.group_id = 10 ORDER BY a.name"
+                />
+        <field
+                name="pair_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Language Pair"
+                description=""
+                required="true"
+                query="SELECT a.id as value, concat(b.name,'-', c.name) as pair_id
+                        from jos_vt_pairslanguages as a
+                        left join jos_vt_languages as b on a.langId1 = b.id
+                        left join jos_vt_languages as c on a.langId2 = c.id"
+                />
+        <field
+                name="rate"
+                type="text"
+                label="Interpreter's rate"
+                description=""
+                size="80"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="subj_ids"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Subjects"
+                description=""
+                required="true"
+                multiple="true"
+                query="select id as value, name as subj_ids from #__vt_subjects ORDER BY name"
+                />
+
+
+        <field type="spacer" name="myspacer1" class="text"
+               label="" hr="true"
+                />
+
+        <field type="spacer" name="myspacer2" label="&lt;b&gt;Working time parameters&lt;/b&gt;" />
+
+        <field name="countWorkingDays" type="list" default="" label="Count Working Days" description="">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </field>
+
+        <field name="countDayOff" type="list" default="" label="Count Days Off" description="">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </field>
+
+
+        <field name="start_time_hours" type="list" default="" label="Start time hours" description="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+        </field>
+
+        <field name="start_time_minutes" type="list" default="" label="Start time minutes" description="">
+            <option value="00">00</option>
+            <option value="30">30</option>
+        </field>
+
+        <field name="end_time_hours" type="list" default="" label="End time hours" description="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+        </field>
+
+        <field name="end_time_minutes" type="list" default="" label="End time minutes" description="">
+            <option value="00">00</option>
+            <option value="30">30</option>
+        </field>
+
+        <field type="spacer" name="myspacer3" class="text"
+               label="" hr="true"
+                />
+
+        <field type="spacer" name="myspacer4" label="&lt;b&gt;Lunch time parameters&lt;/b&gt;" />
+
+
+        <field name="lunch_time_start_hours" type="list" default="" label="Lunch time start hours" description="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+        </field>
+
+        <field name="lunch_time_start_minutes" type="list" default="" label="Lunch time start minutes" description="">
+            <option value="00">00</option>
+            <option value="30">30</option>
+        </field>
+
+        <field name="lunch_time_end_hours" type="list" default="" label="Lunch time end hours" description="">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+        </field>
+
+        <field name="lunch_time_end_minutes" type="list" default="" label="Lunch time end minutes" description="">
+            <option value="00">00</option>
+            <option value="30">30</option>
+        </field>
+
+        <field type="spacer" name="myspacer5" class="text"
+               label="" hr="true"
+                />
+
+        <field type="spacer" name="myspacer6" label="&lt;b&gt;Start day&lt;/b&gt;" />
+
+        <field name="startday" type="calendar" default="NOW" label="Select a date" description="" format="%Y-%m-%d" />
+
+    </fieldset>
+</form>

@@ -1,0 +1,11 @@
+{
+  "audio" : [
+    {"ssrc":3905800087,"rtpTimestamp":1556211115,"filename":"3905800087.mp3","endpointId":"c2ef0276","type":"RECORDING_STARTED","instant":1429042829434,"mediaType":"audio"},
+    {"ssrc":353414144,"rtpTimestamp":1556170883,"filename":"353414144.mp3","endpointId":"f6a68a03","type":"RECORDING_STARTED","instant":1429042829738,"mediaType":"audio"}
+  ],
+
+  "video" : [
+    {"ssrc":2315068213,"rtpTimestamp":2391257509,"filename":"2315068213.webm","aspectRatio":"16_9","endpointId":"c2ef0276","type":"RECORDING_STARTED","instant":1429042829623,"mediaType":"video"},
+    {"ssrc":695501973,"rtpTimestamp":2389350881,"filename":"695501973.webm","aspectRatio":"16_9","endpointId":"f6a68a03","type":"RECORDING_STARTED","instant":1429042829678,"mediaType":"video"}
+  ]
+}

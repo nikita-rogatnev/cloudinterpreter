@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+        <field
+                name="ses_id"
+                type="text"
+                class="inputbox"
+                default=""
+                label="Session id"
+                description=""
+                readonly="true"
+                />
+
+        <field
+                name="user_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="User"
+                description=""
+                query="select id as value, name as user_id from #__users ORDER BY name"
+                readonly="true"
+                />
+        <field
+                name="user_timezone"
+                type="text"
+                class="inputbox"
+                default=""
+                label="User timezone"
+                description=""
+                readonly="true"
+                />
+        <field
+                name="envitee_email"
+                type="email"
+                class="inputbox"
+                default=""
+                label="Invitee email"
+                description=""
+                readonly="true"
+                />
+        <field
+                name="envitee_name"
+                type="text"
+                class="inputbox"
+                default=""
+                label="Invitee name"
+                description=""
+                readonly="true"
+                />
+
+        <field
+                name="envitee_phone"
+                type="text"
+                class="inputbox"
+                default=""
+                label="Invitee phone"
+                description=""
+                readonly="true"
+                />
+        <field
+                name="envitee_timezone"
+                type="text"
+                class="inputbox"
+                default=""
+                label="Invitee timezone"
+                description=""
+                readonly="true"
+                />
+        <field
+                name="translator_id"
+                type="sql"
+                class="inputbox"
+                default=""
+                label="Translator"
+                description=""
+                query="select id as value, name as translator_id from #__users ORDER BY name"
+                required="true"
+                />
+
+        <field
+                name="amount"
+                type="text"
+                label="Amount"
+                description=""
+                size="80"
+                class="inputbox"
+                default=""
+                />
+
+	</fieldset>
+</form>
