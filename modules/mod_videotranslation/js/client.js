@@ -54,6 +54,20 @@ jQuery( document ).ready(function() {
 			//jQuery('#interpretersBysyInfo').html(countBusy);
 		});
 
+        socket.on('CONNECTED_SIGN_USERS', function(data){
+            console.log('connected sign operators: ',data);
+
+            var countOnline = 0;
+            //var countBusy = 0;
+
+            for(var k in data) {
+                countOnline++;
+            }
+
+            jQuery('#signInterpretersInfo').html(countOnline);
+            //jQuery('#interpretersBysyInfo').html(countBusy);
+        });
+
         socket.on('reloadPage', function() {
             location.reload();
         });
@@ -133,29 +147,64 @@ jQuery('.call-btn,.cancel-call-btn').click(function() {
         //jQuery(".call-btn").toggle();
         //jQuery(".cancel-call-btn").toggle();
 
-        if(jQuery(this).hasClass('call-btn')) {
+        var clickedButtonId = $(this).id;
 
- sendStat_start(socket.socket.sessionid);
-			if(parseInt(jQuery("#interpretersInfo").html())== 0) {
-				//alert("переводчик занят или рабочий день закончен");
-				//return false;
 
-                jQuery('.modal-body #infoAboutMicContent').hide();
-                jQuery('.modal-footer #newRoomLink').hide();
-                jQuery('#busyOperators').modal();
-sendStat_busy(socket.socket.sessionid);
-			}
-			
-                play_sound();
-                socket.emit('call','online english');
-                jQuery(this).removeClass('call-btn').addClass('cancel-call-btn');
+
+        if(jQuery(this).hasClass('call-btn') ) {
+
+            sendStat_start(socket.socket.sessionid);
+
+            if(clickedButtonId == 'call_interpreter_now') {
+                if(parseInt(jQuery("#interpretersInfo").html()) == 0) {
+                    //alert("переводчик занят или рабочий день закончен");
+                    //return false;
+
+                    jQuery('.modal-body #infoAboutMicContent').hide();
+                    jQuery('.modal-footer #newRoomLink').hide();
+                    jQuery('#busyOperators').modal();
+
+
+                    sendStat_busy(socket.socket.sessionid);
+                }
+                else  socket.emit('call','online english');
+            }
+
+            if(clickedButtonId == 'call_sign_language_now') {
+                if(parseInt(jQuery("#signInterpretersInfo").html())== 0 ) {
+                    //alert("переводчик занят или рабочий день закончен");
+                    //return false;
+
+                    jQuery('.modal-body #infoAboutMicContent').hide();
+                    jQuery('.modal-footer #newRoomLink').hide();
+                    jQuery('#busyOperators').modal();
+
+                    sendStat_busy(socket.socket.sessionid);
+                }
+                else {
+                    console.log("id clicked button is: ",$(this).id);
+                    socket.emit('call','online sign');
+                }
+            }
+
+            play_sound();
+            jQuery(this).removeClass('call-btn').addClass('cancel-call-btn');
         }
         else if(jQuery(this).hasClass('cancel-call-btn')) {
                 myAudio.pause();
-				
-                socket.emit('userCancelled','answering english');
+
+                switch (clickedButtonId) {
+                    case 'call_interpreter_now':
+                        socket.emit('userCancelled','answering english');
+                    break;
+                    case 'call_sign_language_now':
+                        socket.emit('userCancelled','answering sign');
+                        break;
+                }
+
                 jQuery(this).removeClass('cancel-call-btn').addClass('call-btn');
         }
+
         return false;
     }
     });

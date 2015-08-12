@@ -85,7 +85,7 @@ defined('_JEXEC') or die;
                 </div>
 
                 <div class="nowBut" style="padding-top: 20px;">
-                    <button class="btn newButton call-btn callSignLanguageNow" id='call_sign_language_now'><?php echo JText::_('MOD_VIDEOTRANSLATION_CALL_TO_SIGN_LANGUAGE_BUTTON');?> </button>
+                    <button class="btn newButton call-btn callTranslatorNow" id='call_sign_language_now'><?php echo JText::_('MOD_VIDEOTRANSLATION_CALL_TO_SIGN_LANGUAGE_BUTTON');?> </button>
                 </div>
 
             </div>
@@ -259,6 +259,7 @@ defined('_JEXEC') or die;
             </div>
 <div style="visibility: hidden;">Свободные переводчики:
                 <span id="interpretersInfo"></span>
+                <span id="signInterpretersInfo"></span>
                 <span id="noMediaInfo"><?php echo JText::_('MOD_VIDEOTRANSLATION_NO_MEDIA');?></span>
 </div>
 <script type="text/javascript">
