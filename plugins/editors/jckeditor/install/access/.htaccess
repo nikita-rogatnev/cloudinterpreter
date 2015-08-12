@@ -138,7 +138,7 @@ RewriteCond %{REQUEST_FILENAME} (\.php)$
 RewriteCond %{REQUEST_FILENAME} !(/index[23]?\.php)$
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule (.*\.php)$ - [F]
-## Disallow access to htaccess.txt, php.ini and configuration.php-dist
+## Disallow access to .htaccess, php.ini and configuration.php-dist
 RewriteRule ^(htaccess\.txt|configuration\.php-dist|php\.ini)$ - [F]
 ##### Advanced server protection -- END
 

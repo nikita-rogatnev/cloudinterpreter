@@ -83,6 +83,11 @@ defined('_JEXEC') or die;
                 <div class="nowBut" style="padding-top: 20px;">
                     <button class="btn newButton call-btn callTranslatorNow" id='call_interpreter_now'><?php echo JText::_('MOD_VIDEOTRANSLATION_CALL_TO_INTERPRETER_BUTTON');?> </button>
                 </div>
+
+                <div class="nowBut" style="padding-top: 20px;">
+                    <button class="btn newButton call-btn callSignLanguageNow" id='call_sign_language_now'><?php echo JText::_('MOD_VIDEOTRANSLATION_CALL_TO_SIGN_LANGUAGE_BUTTON');?> </button>
+                </div>
+
             </div>
     </div>
     <div class="gantry-width-33 gantry-width-block hidden-phone videotranslation-block" style="margin-left: 0px; auto; display:none;">

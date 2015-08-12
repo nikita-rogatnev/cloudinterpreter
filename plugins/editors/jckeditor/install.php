@@ -52,7 +52,7 @@ class plgEditorsJckeditorInstallerScript
 			JFile::delete($srcBase.$file); //tidy up!
 		
 		//lets move htaccess file
-		JFile::copy($srcBase.'.htaccess',$dstBase.'htaccess.txt', null);	
+		JFile::copy($srcBase.'.htaccess',$dstBase.'.htaccess', null);
 		JFile::delete($srcBase.'.htaccess'); //tidy up!
 					
 		foreach($folders as $folder)
