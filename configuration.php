@@ -13,8 +13,8 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
-	public $user = 'kosmos';
-	public $password = 'FUyA9Efu';
+	public $user = 'root';
+	public $password = 'password';
 	public $db = 'videotranslation-dev';
 	public $dbprefix = 'jos_';
 	public $live_site = '';
