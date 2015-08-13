@@ -86,7 +86,7 @@ body {
 }
 
 #remotes video {
-    height: 337px;
+    height: 650px;
     margin-left: 6px;
 }
 /*
@@ -98,8 +98,8 @@ body {
 
 .volume-control {
     display: none;
-    top: 320px;
-    left: 320px;
+    top: 627px;
+    left: 167px;
     position: absolute;
 }
 
