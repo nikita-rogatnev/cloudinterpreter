@@ -135,8 +135,11 @@ jQuery('.call-btn,.cancel-call-btn').click(function() {
         alert('У Вас должен быть положительный баланс на счету');
     } else {
 
+
+        debugger;
+
         bowser = jQuery.browser;
-        if(bowser.chrome == true || bowser.firefox == true || bowser.opera == true) {
+        if(bowser.chrome == true || bowser.mozilla == true || bowser.opera == true) {
 
         }
         else {
@@ -352,20 +355,20 @@ function showJoinRoomLink(room) {
 
     if(linkWasAdded == false) {
 
-        jQuery('.modal-footer').append('<div style="float:left;" id="newRoomLink"><a href="http://cloudinterpreter.com/room/?'+room+'" target="_blank" id="room_link">Ссылка на комнату</a><img src="' + base_url + 'modules/mod_videotranslation/img/copy.png" class="clipboardimg"></div>');
+        //jQuery('.modal-footer').append('<div style="float:left;" id="newRoomLink"><a href="http://cloudinterpreter.com/room/?'+room+'" target="_blank" id="room_link">Ссылка на комнату</a><img src="' + base_url + 'modules/mod_videotranslation/img/copy.png" class="clipboardimg"></div>');
 
         //jQuery('#remotes').css('min-height',337+'px');
 
 
-        setTimeout(function() {
-            jQuery('.clipboardimg').zclip({
-                path:'js/ZeroClipboard.swf',
-                copy:jQuery('#room_link').attr('href'),
-                afterCopy:function(){
-                    alert('ссылка на комнату была скопирована в буфер');
-                }
-            });
-        }, 1000);
+//        setTimeout(function() {
+//            jQuery('.clipboardimg').zclip({
+//                path:'js/ZeroClipboard.swf',
+//                copy:jQuery('#room_link').attr('href'),
+//                afterCopy:function(){
+//                    alert('ссылка на комнату была скопирована в буфер');
+//                }
+//            });
+//        }, 1000);
 
 //        jQuery('#defaultCountdown1').show();
 //        jQuery('#defaultCountdown1').countdown({
