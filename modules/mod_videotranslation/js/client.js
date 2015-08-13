@@ -135,9 +135,6 @@ jQuery('.call-btn,.cancel-call-btn').click(function() {
         alert('У Вас должен быть положительный баланс на счету');
     } else {
 
-
-        debugger;
-
         bowser = jQuery.browser;
         if(bowser.chrome == true || bowser.mozilla == true || bowser.opera == true) {
 
