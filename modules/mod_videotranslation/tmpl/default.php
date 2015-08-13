@@ -159,15 +159,15 @@ defined('_JEXEC') or die;
             <div class="modal fade bs-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-						    <div class="timeIsOutText" style="display: none; position: fixed; right: 130px;">
-						                       Время бесплатного тестирования истекает. У вас осталось меньше 1 минуты!
-						                   </div>
-                            <div id="defaultCountdown1"></div>
-                            <div class="modal-title" id="myModalLabel"></div>
-
-                        </div>
+<!--                        <div class="modal-header">-->
+<!--                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+<!--						    <div class="timeIsOutText" style="display: none; position: fixed; right: 130px;">-->
+<!--						                       Время бесплатного тестирования истекает. У вас осталось меньше 1 минуты!-->
+<!--						                   </div>-->
+<!--                            <div id="defaultCountdown1"></div>-->
+<!--                            <div class="modal-title" id="myModalLabel"></div>-->
+<!---->
+<!--                        </div>-->
                         <div class="modal-body " style="padding: 10px; position: relative;" >
 
                             <div id="remotes"></div>
@@ -185,28 +185,28 @@ defined('_JEXEC') or die;
                                 </div>
                             </div>
 							
-				            <div style="float: left;" class="chat">
-                                <div class="emailForFreeMinutes" style="color: white; width: 250px; margin-bottom: 20px; text-align: left;">
-                                    Оставьте свой e-mail и получите дополнительные бесплатные минуты
-                                    <div>
-                                        <input type="text" name="emailForFreeMinutes" id="emailForFreeMinutes" style="width: 150px; min-width: 150px;">
-                                    </div>
-                                    <div style="float: left;">
-                                        <input type="button" value="send" id="emailForFreeMinutesButton">
-                                    </div>
-                                    <div style="clear: both;"></div>
-                                </div>
-								
-								
-				                  <div id="log"></div>
-                                  <div style="float: left;">
-                                      <input type="text" id="input" autofocus>
-                                  </div>
-				                  <div style="float: left;">
-				                    <input type="submit" id="send" value="Send">
-                                  </div>
-				              </div>
-							
+<!--				            <div style="float: left;" class="chat">-->
+<!--                                <div class="emailForFreeMinutes" style="color: white; width: 250px; margin-bottom: 20px; text-align: left;">-->
+<!--                                    Оставьте свой e-mail и получите дополнительные бесплатные минуты-->
+<!--                                    <div>-->
+<!--                                        <input type="text" name="emailForFreeMinutes" id="emailForFreeMinutes" style="width: 150px; min-width: 150px;">-->
+<!--                                    </div>-->
+<!--                                    <div style="float: left;">-->
+<!--                                        <input type="button" value="send" id="emailForFreeMinutesButton">-->
+<!--                                    </div>-->
+<!--                                    <div style="clear: both;"></div>-->
+<!--                                </div>-->
+<!--								-->
+<!--								-->
+<!--				                  <div id="log"></div>-->
+<!--                                  <div style="float: left;">-->
+<!--                                      <input type="text" id="input" autofocus>-->
+<!--                                  </div>-->
+<!--				                  <div style="float: left;">-->
+<!--				                    <input type="submit" id="send" value="Send">-->
+<!--                                  </div>-->
+<!--				              </div>-->
+
 
                             <div style="clear: both;"></div>
 

@@ -367,14 +367,14 @@ function showJoinRoomLink(room) {
             });
         }, 1000);
 
-        jQuery('#defaultCountdown1').show();
-        jQuery('#defaultCountdown1').countdown({
-            until: +600,
-            format: 'HMS',
-            onTick: watchCountdown,
-            compact: true,
-            onExpiry: liftOff
-        });
+//        jQuery('#defaultCountdown1').show();
+//        jQuery('#defaultCountdown1').countdown({
+//            until: +600,
+//            format: 'HMS',
+//            onTick: watchCountdown,
+//            compact: true,
+//            onExpiry: liftOff
+//        });
 
 
         linkWasAdded = true;
