@@ -12,7 +12,7 @@ function SimpleWebRTC(opts) {
     var self = this;
     var options = opts || {};
     var config = this.config = {
-            url: 'http://cloudinterpreter.com:2882',
+            url: 'http://signalmaster.cloudinterpreter.com',
             socketio: {/* 'force new connection':true*/},
             debug: false,
             localVideoEl: '',
