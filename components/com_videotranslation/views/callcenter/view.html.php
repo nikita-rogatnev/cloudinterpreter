@@ -24,7 +24,7 @@ class VideoTranslationViewCallcenter extends JViewLegacy
 
         $document->addScript('http://code.jquery.com/jquery-1.9.1.js');
         $document->addScript('http://code.jquery.com/ui/1.10.4/jquery-ui.js');
-        $document->addScript('http://78.140.138.8:1999/socket.io/socket.io.js');
+        $document->addScript('http://call.cloudinterpreter.com/socket.io/socket.io.js');
 
         $document->addScript(JURI::base().'components/com_videotranslation/js/call-center.js');
 
