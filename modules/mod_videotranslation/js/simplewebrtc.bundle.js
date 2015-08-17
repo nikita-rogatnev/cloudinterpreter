@@ -13,9 +13,9 @@ function SimpleWebRTC(opts) {
     var self = this;
     var options = opts || {};
     var config = this.config = {
-            //url: 'http://signalmaster.cloudinterpreter.com',
+            url: 'http://signalmaster.cloudinterpreter.com',
 			//url: 'https://cloudinterpreter.com:2888',
-            url: 'http://cloudinterpreter.com:2882',
+            //url: 'http://cloudinterpreter.com:2882',
             debug: false,
             localVideoEl: '',
             remoteVideosEl: '',
