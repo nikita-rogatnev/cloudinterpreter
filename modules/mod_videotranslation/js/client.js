@@ -17,7 +17,7 @@ jQuery( document ).ready(function() {
     });
 
     //socket = io.connect('http://call.cloudinterpreter.com');
-	socket = io.connect('http://78.140.138.8:1999');
+	socket = io.connect('http://call.cloudinterpreter.com');
 
     socket.on('connect', function () {
 
