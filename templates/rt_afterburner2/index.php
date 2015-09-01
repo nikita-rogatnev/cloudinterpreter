@@ -22,6 +22,7 @@ $gpreset = str_replace(' ','',strtolower($gantry->get('name')));
 <!doctype html>
 <html xml:lang="<?php echo $gantry->language; ?>" lang="<?php echo $gantry->language;?>" >
 <head>
+    <meta name="google-play-app" content="app-id=com.cloudinterpreter">
     <meta name="apple-itunes-app" content="app-id=887857750, affiliate-data=myAffiliateData, app-argument=myURL">
     <meta name='yandex-verification' content='6fc0514bde906de5' />
 	<?php if ($gantry->get('layout-mode') == '960fixed') : ?>

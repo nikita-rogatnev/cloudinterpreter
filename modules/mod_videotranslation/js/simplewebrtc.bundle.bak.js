@@ -13,8 +13,8 @@ function SimpleWebRTC(opts) {
     var self = this;
     var options = opts || {};
     var config = this.config = {
-            //url: 'http://signalmaster.cloudinterpreter.com',
-            url: 'http://cloudinterpreter.com:2882',
+            url: 'http://signalmaster.cloudinterpreter.com',
+            //url: 'http://cloudinterpreter.com:2882',
             debug: false,
             localVideoEl: '',
             remoteVideosEl: '',
@@ -4830,7 +4830,7 @@ function WebRTC(opts) {
             autoRequestMedia: false,
             // makes the entire PC config overridable
             peerConnectionConfig: {
-                iceServers: [{"url": "turn:cloudinterpreter.com:443", username:"turn", credential:"7ff69c1912c3ff43dfde2a6d9e206a09"}]
+                iceServers: [{"url": "turn:cloudinterpreter.com:3478", username:"turn", credential:"7ff69c1912c3ff43dfde2a6d9e206a09"}]
                 //iceServers: [{"url":"stun:stun.l.google.com:19302"}]
                 //iceServers: browser == 'firefox' ? [{"url":"stun:124.124.124.2"}] : [{"url": "turn:turn@78.140.138.8:443", credential:"7ff69c1912c3ff43dfde2a6d9e206a09"}]
 
