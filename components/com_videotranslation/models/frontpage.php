@@ -258,7 +258,7 @@ class VideoTranslationModelFrontpage extends JModelForm
 
         //all events in database for this day
         $query = "SELECT b.ev_id,b.created_by,a.dtstart,a.dtend,b.state FROM #__jevents_vevdetail as a, #__jevents_vevent as b WHERE "
-            ." a.dtstart >= ".$min." AND a.dtend <= ".$max." AND b.ev_id = a.evdet_id AND b.state >= 0";
+            ." a.dtstart >= ".$min." AND a.dtend <= ".$max." AND b.ev_id = a.evdet_id AND b.state > 0";
 
         $db->setQuery($query);
         $rows = $db->loadObjectList();
