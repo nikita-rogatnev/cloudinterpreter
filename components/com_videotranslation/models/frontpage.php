@@ -264,6 +264,7 @@ class VideoTranslationModelFrontpage extends JModelForm
         $rows = $db->loadObjectList();
 
 
+
         //merge all events with all others intervals
         $rows = $this->mergeWithAllIntervals($rows, $min, $max,$difference);
 
@@ -283,7 +284,7 @@ class VideoTranslationModelFrontpage extends JModelForm
             for($j=0;$j<count($users_for_pair);$j++) {
 
                 if($users_for_pair[$j]->user_id != $rows[$i]->created_by) {
-                    $query = "SELECT a.evdet_id, a.dtstart, a.dtend,b.created_by from #__jevents_vevdetail as a, #__jevents_vevent as b WHERE b.ev_id = a.evdet_id AND b.created_by = ".$users_for_pair[$j]->user_id
+                    $query = "SELECT a.evdet_id, a.dtstart, a.dtend,b.created_by from #__jevents_vevdetail as a, #__jevents_vevent as b WHERE b.ev_id = a.evdet_id AND b.state > 0 AND b.created_by = ".$users_for_pair[$j]->user_id
 
                         ." AND ((a.dtstart < ".$rows[$i]->dtstart." AND a.dtend > ".$rows[$i]->dtstart.") OR (a.dtstart = ".$rows[$i]->dtstart." AND a.dtend = ".$rows[$i]->dtend.") OR (a.dtstart < ".$rows[$i]->dtend." AND a.dtend > ".$rows[$i]->dtend."))"
                     ;
